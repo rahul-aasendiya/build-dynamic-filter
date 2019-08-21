@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def BootstrapeFilterView(request):
+	return render(request, 'bootstrape_form.html')

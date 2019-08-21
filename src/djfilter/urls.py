@@ -18,8 +18,11 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+from core.views import BootstrapeFilterView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', BootstrapeFilterView, name='bootstrape'),
 ]
 
 if settings.DEBUG:
